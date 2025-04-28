@@ -6,9 +6,10 @@ function App() {
 
   return (
     <>
-     <h1>
+     <h1 >
       Auction Gallery Site
      </h1>
+     <button className='btn btn-outline btn-primary' >Click Me!</button>
     </>
   )
 }
