@@ -1,15 +1,14 @@
 
 import './App.css'
-
+import Navbar from './components/navbar'
+import Banner from './components/banner'
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-     <h1 >
-      Auction Gallery Site
-     </h1>
-     <button className='btn btn-outline btn-primary' >Click Me!</button>
+    <Navbar ></Navbar>
+    <Banner></Banner>
     </>
   )
 }
