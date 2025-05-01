@@ -1,7 +1,7 @@
 export default function Navbar()
 {
     return (
-      <div className="navbar bg-base-100 shadow-sm px-[3%] justify-between">
+      <div className="navbar bg-base-100 shadow-sm px-[5%] justify-between">
   <div className="">
     <a className=" text-2xl"><span className="text-[#003EA4] ">Auction</span><span className="text-[#FFD337] font-extrabold">Gallery</span></a>
   </div>
