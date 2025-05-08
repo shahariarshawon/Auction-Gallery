@@ -1,17 +1,8 @@
 import BannerImage from "../../assets/images/bannerImage.png";
-import React, { useEffect } from "react";
+
 
 const Banner = () => {
-    useEffect(()=>
-    {
-        fetch("../../../public/items.json")
-        .then(res=>res.json())
-        .then(data=>clickData(data));
-    },[])
-    function clickData()
-    {
-        
-    }
+   
   return (
     <>
       <div
