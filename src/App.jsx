@@ -1,16 +1,15 @@
 
 import './App.css'
-import Navbar from './components/navbar'
-import Banner from './components/banner'
-import Table from './components/table'
+import Home from './components/Home'
+// import Banner from './components/banner'
+// import Datas from './components/table/Datas'
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
-    <Navbar ></Navbar>
-    <Banner></Banner>
-    <Table></Table>
+  <>
+    <Home>
+    </Home>
     </>
   )
 }
