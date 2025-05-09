@@ -1,14 +1,14 @@
 import React from 'react';
 import Section from './Section';
 
-const Sections = ({handleData}) => {
+const Sections = ({handleData,lengthReciever}) => {
     return (
         <>
             <div className="flex-3/5 bg-white rounded-3xl ">
                 <div className="overflow-x-auto">
-  <table className="table">
+  <table className="table ">
     {/* head */}
-    <thead>
+    <thead className=''>
       <tr className="text-xl ">
         
         <th className='text-center'>Items</th>
@@ -18,7 +18,7 @@ const Sections = ({handleData}) => {
       </tr>
     </thead>
     <tbody className="text-lg text-center">
-      <Section Data={handleData}></Section>
+      <Section lengthReciever={lengthReciever} Data={handleData}></Section>
     </tbody>
     
   

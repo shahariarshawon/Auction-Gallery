@@ -11,12 +11,17 @@ const Home = () => {
             .then(res=>res.json())
             .then(data=>setJsonData(data));
         },[])
+
+    function lengthReciever(datas)
+    {
+      
+    }
         // console.log(jsonData);
     return (
         <>
-            <Navbar></Navbar>
+            <Navbar lengthReciever={lengthReciever}></Navbar>
             <Banner></Banner>
-            <AuctionSection handleData={jsonData}></AuctionSection>
+            <AuctionSection handleData={jsonData} lengthReciever={lengthReciever}></AuctionSection>
         </>
     );
 };

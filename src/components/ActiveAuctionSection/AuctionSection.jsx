@@ -4,7 +4,7 @@ import Carts from "./Cart/Carts";
 import Sections from "./Section/Sections";
 
 
-const AuctionSection = ({handleData}) => {
+const AuctionSection = ({handleData,lengthReciever}) => {
 
     return (
         <>
@@ -15,7 +15,7 @@ const AuctionSection = ({handleData}) => {
             </div>
             <div className="flex gap-6 pb-10 ">
                 {/* table */}
-                <Sections handleData={handleData}></Sections>
+                <Sections lengthReciever={lengthReciever} handleData={handleData}></Sections>
                 {/* favourite items */}
                <Carts></Carts>
             </div>
