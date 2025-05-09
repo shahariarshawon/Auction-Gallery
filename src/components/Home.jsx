@@ -1,29 +1,31 @@
-import React, { useEffect, useState } from 'react';
-import Banner from './banner/Banner';
-import Navbar from './navbar/navbar';
-import AuctionSection from './ActiveAuctionSection/AuctionSection';
+import Banner from "./banner/Banner";
+import Navbar from "./navbar/navbar";
+import AuctionSection from "./ActiveAuctionSection/AuctionSection";
+import { useState } from "react";
 
 const Home = () => {
-    const [jsonData, setJsonData]=useState([]);
-    useEffect(()=>
-        {
-            fetch("../../../public/items.json")
-            .then(res=>res.json())
-            .then(data=>setJsonData(data));
-        },[])
-
-    function lengthReciever(datas)
+  const [cartData, setCartData] = useState([]);
+    
+  function handleAddToCart(data) {
+    if(!cartData.includes(data))
     {
-      
+        setCartData([...cartData,data])
     }
-        // console.log(jsonData);
-    return (
-        <>
-            <Navbar lengthReciever={lengthReciever}></Navbar>
-            <Banner></Banner>
-            <AuctionSection handleData={jsonData} lengthReciever={lengthReciever}></AuctionSection>
-        </>
-    );
+  }
+  console.log(cartData);
+
+  // console.log(jsonData);
+  return (
+    <>
+      <div className="relative">
+      <div className="fixed top-0 right-0 left-0">
+      <Navbar data={cartData}></Navbar>
+      </div>
+      </div>
+      <Banner></Banner>
+      <AuctionSection handleAddToCart={handleAddToCart}></AuctionSection>
+    </>
+  );
 };
 
 export default Home;

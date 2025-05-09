@@ -1,7 +1,15 @@
+import { useState, useEffect } from 'react';
 import React from 'react';
 import Section from './Section';
 
-const Sections = ({handleData,lengthReciever}) => {
+const Sections = ({handleAddToCart}) => {
+  const [productsData, setProductsData]=useState([]);
+    useEffect(()=>
+        {
+            fetch("../../../public/items.json")
+            .then(res=>res.json())
+            .then(data=>setProductsData(data));
+        },[])
     return (
         <>
             <div className="flex-3/5 bg-white rounded-3xl ">
@@ -18,7 +26,16 @@ const Sections = ({handleData,lengthReciever}) => {
       </tr>
     </thead>
     <tbody className="text-lg text-center">
-      <Section lengthReciever={lengthReciever} Data={handleData}></Section>
+{
+  productsData.map((p)=>
+  {
+    return(
+      <Section item={p} key={p.id} handleAddToCart={handleAddToCart}></Section>
+    )
+  })
+}
+
+      
     </tbody>
     
   
