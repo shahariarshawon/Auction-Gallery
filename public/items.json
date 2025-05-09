@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Vintage Leica M3 Camera",
-    "description": "Classic film camera known for its precision and build quality.",
+    "description": "Classic film camera known for its precision and build.",
     "currentBidPrice": 3490,
     "timeLeft": "1 day 3 hrs",
     "bidsCount": 28,
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+    "title": "First Edition 'The Great Gatsby'",
     "description": "Rare first edition of the American literary classic.",
     "currentBidPrice": 10500,
     "timeLeft": "12 hrs ",

@@ -4,7 +4,8 @@ import Carts from "./Cart/Carts";
 import Sections from "./Section/Sections";
 
 
-const AuctionSection = ({handleAddToCart}) => {
+const AuctionSection = ({handleAddToCart, products}) => {
+    // console.log(products.length);
 
     return (
         <>
@@ -17,7 +18,7 @@ const AuctionSection = ({handleAddToCart}) => {
                 {/* table */}
                 <Sections handleAddToCart={handleAddToCart}></Sections>
                 {/* favourite items */}
-               <Carts></Carts>
+               <Carts products={products}></Carts>
             </div>
         </section> 
         </>

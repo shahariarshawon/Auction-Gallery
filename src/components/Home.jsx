@@ -2,6 +2,7 @@ import Banner from "./banner/Banner";
 import Navbar from "./navbar/navbar";
 import AuctionSection from "./ActiveAuctionSection/AuctionSection";
 import { useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 const Home = () => {
   const [cartData, setCartData] = useState([]);
@@ -12,18 +13,19 @@ const Home = () => {
         setCartData([...cartData,data])
     }
   }
-  console.log(cartData);
+  console.log(cartData.length);
 
   // console.log(jsonData);
   return (
     <>
-      <div className="relative">
-      <div className="fixed top-0 right-0 left-0">
+      
+      <div className="fixed top-0 right-0 left-0 z-50">
       <Navbar data={cartData}></Navbar>
       </div>
-      </div>
+      
       <Banner></Banner>
-      <AuctionSection handleAddToCart={handleAddToCart}></AuctionSection>
+      <AuctionSection handleAddToCart={handleAddToCart} products={cartData} ></AuctionSection>
+      <ToastContainer></ToastContainer>
     </>
   );
 };
