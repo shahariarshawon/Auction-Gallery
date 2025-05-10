@@ -6,7 +6,7 @@
     "currentBidPrice": 2150,
     "timeLeft": "2 days 4 hrs",
     "bidsCount": 17,
-    "image": "../src/assets/images/p1.jpg"
+    "image": "https://i.ibb.co.com/DD0ntyDF/p1.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "currentBidPrice": 1380,
     "timeLeft": "9 hrs 20 mins",
     "bidsCount": 22,
-    "image": "../src/assets/images/p2.jpg"
+    "image": "https://i.ibb.co.com/6cdvrLxn/p2.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "currentBidPrice": 4260,
     "timeLeft": "1 day 2 hrs",
     "bidsCount": 34,
-    "image": "../src/assets/images/p3.jpg"
+    "image": "https://i.ibb.co.com/PvxKDHLx/p3.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "currentBidPrice": 7980,
     "timeLeft": "6 hrs 15 mins",
     "bidsCount": 41,
-    "image": "../src/assets/images/p4.jpg"
+    "image": "https://i.ibb.co.com/MkxQL8VT/p4.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "currentBidPrice": 950,
     "timeLeft": "8 hrs",
     "bidsCount": 12,
-    "image": "../src/assets/images/p5.jpg"
+    "image": "https://i.ibb.co.com/6RJ48CVL/p5.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "currentBidPrice": 1890,
     "timeLeft": "1 day 18 hrs",
     "bidsCount": 27,
-    "image": "../src/assets/images/p6.jpg"
+    "image": "https://i.ibb.co.com/HpN07Zbm/p6.jpg"
   },
   {
     "id": 7,
@@ -60,6 +60,6 @@
     "currentBidPrice": 230,
     "timeLeft": "3 hrs 50 mins",
     "bidsCount": 9,
-    "image": "../src/assets/images/p7.jpg"
+    "image": "https://i.ibb.co.com/v4JSTymQ/p7.jpg"
   }
 ]
