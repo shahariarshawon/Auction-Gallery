@@ -1,8 +1,9 @@
 import Banner from "./banner/Banner";
-import Navbar from "./navbar/navbar";
+import Navbar from "./navbar/Navbar";
 import AuctionSection from "./ActiveAuctionSection/AuctionSection";
 import { useState } from "react";
 import { ToastContainer } from "react-toastify";
+import Footer from "./Footer/Footer";
 
 const Home = () => {
   const [cartData, setCartData] = useState([]);
@@ -26,6 +27,7 @@ const Home = () => {
       <Banner></Banner>
       <AuctionSection handleAddToCart={handleAddToCart} products={cartData} ></AuctionSection>
       <ToastContainer></ToastContainer>
+      <Footer></Footer>
     </>
   );
 };
