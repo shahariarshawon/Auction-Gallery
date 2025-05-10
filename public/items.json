@@ -1,65 +1,65 @@
 [
   {
     "id": 1,
-    "title": "Vintage Leica M3 Camera",
-    "description": "Classic film camera known for its precision and build.",
-    "currentBidPrice": 3490,
-    "timeLeft": "1 day 3 hrs",
-    "bidsCount": 28,
-    "image": "../src/assets/images/Bid1-min.png"
+    "title": "Polaroid SX-70 Instant Camera",
+    "description": "Iconic foldable instant camera with retro charm.",
+    "currentBidPrice": 2150,
+    "timeLeft": "2 days 4 hrs",
+    "bidsCount": 17,
+    "image": "../src/assets/images/p1.jpg"
   },
   {
     "id": 2,
-    "title": "1965 Gibson SG Standard Electric Guitar",
-    "description": "Iconic electric guitar with rich history and sound.",
-    "currentBidPrice": 5210,
-    "timeLeft": "5 hrs",
-    "bidsCount": 35,
-    "image": "../src/assets/images/Bid2-min.png"
+    "title": "Nintendo Game Boy (1989)",
+    "description": "First-generation handheld console that started it all.",
+    "currentBidPrice": 1380,
+    "timeLeft": "9 hrs 20 mins",
+    "bidsCount": 22,
+    "image": "../src/assets/images/p2.jpg"
   },
   {
     "id": 3,
-    "title": "Original Apple Macintosh 128K (1984)",
-    "description": "First-generation Apple Macintosh, a collector's gem.",
-    "currentBidPrice": 8370,
-    "timeLeft": "3 days 7 hrs",
-    "bidsCount": 19,
-    "image": "../src/assets/images/Bid3-min.png"
+    "title": "Original Star Wars Poster (1977)",
+    "description": "Rare poster from the original movie release.",
+    "currentBidPrice": 4260,
+    "timeLeft": "1 day 2 hrs",
+    "bidsCount": 34,
+    "image": "../src/assets/images/p3.jpg"
   },
   {
     "id": 4,
-    "title": "Rolex Submariner 16610",
-    "description": "Luxury dive watch, a timeless investment piece.",
-    "currentBidPrice": 12250,
-    "timeLeft": "2 hrs 20 mins ",
-    "bidsCount": 46,
-    "image": "../src/assets/images/Bid4-min.png"
+    "title": "Fender Telecaster 1972",
+    "description": "Vintage electric guitar loved by pros and collectors.",
+    "currentBidPrice": 7980,
+    "timeLeft": "6 hrs 15 mins",
+    "bidsCount": 41,
+    "image": "../src/assets/images/p4.jpg"
   },
   {
     "id": 5,
-    "title": "First Edition 'The Great Gatsby'",
-    "description": "Rare first edition of the American literary classic.",
-    "currentBidPrice": 10500,
-    "timeLeft": "12 hrs ",
-    "bidsCount": 24,
-    "image": "../src/assets/images/Bid5-min.png"
+    "title": "IBM Model M Keyboard",
+    "description": "Legendary mechanical keyboard with satisfying key clicks.",
+    "currentBidPrice": 950,
+    "timeLeft": "8 hrs",
+    "bidsCount": 12,
+    "image": "../src/assets/images/p5.jpg"
   },
   {
     "id": 6,
-    "title": "Mid-Century Modern Eames Lounge Chair",
-    "description": "Elegant lounge chair with historical mid-century design.",
-    "currentBidPrice": 7850,
-    "timeLeft": "18 hrs 45 mins ",
-    "bidsCount": 31,
-    "image": "../src/assets/images/Bid6-min.png"
+    "title": "Canon AE-1 Film Camera",
+    "description": "Beloved manual film camera great for vintage photography.",
+    "currentBidPrice": 1890,
+    "timeLeft": "1 day 18 hrs",
+    "bidsCount": 27,
+    "image": "../src/assets/images/p6.jpg"
   },
   {
     "id": 7,
-    "title": "Banksy Original Screen Print",
-    "description": "Rare screen print by Banksy, known for bold street art.",
-    "currentBidPrice": 22500,
-    "timeLeft": "1 hr 10 mins",
-    "bidsCount": 57,
-    "image": "../src/assets/images/Bid7-min.png"
+    "title": "Beats Solo3 Wireless Headphones",
+    "description": "High-performance wireless headphones with long battery life.",
+    "currentBidPrice": 230,
+    "timeLeft": "3 hrs 50 mins",
+    "bidsCount": 9,
+    "image": "../src/assets/images/p7.jpg"
   }
 ]

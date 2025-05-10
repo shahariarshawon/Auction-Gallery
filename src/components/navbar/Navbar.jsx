@@ -3,8 +3,8 @@ export default function Navbar({ data }) {
     <>
       <div className="navbar bg-base-100 shadow-sm py-5 px-[5%] justify-between">
         <div>
-          <a href="#" className=" text-3xl">
-            <span className="text-[#003EA4] ">Auction</span>
+          <a href="#" className=" text-4xl">
+            <span className="text-[#003EA4] font-medium">Auction</span>
             <span className="text-[#FFD337] font-extrabold">Gallery</span>
           </a>
         </div>

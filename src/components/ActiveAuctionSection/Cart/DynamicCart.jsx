@@ -2,7 +2,7 @@ import React from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineCancel } from "react-icons/md";
 
-const DynamicCart = ({ products,  removeCartItem}) => {
+const DynamicCart = ({ products, removeCartItem }) => {
   let price = 0;
   return (
     <>
@@ -40,14 +40,17 @@ const DynamicCart = ({ products,  removeCartItem}) => {
                         <div>
                           <div className="font-semibold">{product.title} </div>
                           <div className="flex justify-between items-center pt-2">
-                            s<p>{"$" + product.currentBidPrice}</p>
+                            <p>{"$" + product.currentBidPrice}</p>
                             <p>{"Bids: " + product.bidsCount}</p>
                           </div>
                         </div>
                         {/* cross button */}
 
-                        <button className="btn btn-square btn-ghost text-xl" onClick={()=> removeCartItem(product.id)}>
-                          <MdOutlineCancel  className="text-red-500" />
+                        <button
+                          className="btn btn-square btn-ghost text-xl"
+                          onClick={() => removeCartItem(product.id)}
+                        >
+                          <MdOutlineCancel className="text-red-500" />
                         </button>
                       </li>
                     </ul>
@@ -57,7 +60,7 @@ const DynamicCart = ({ products,  removeCartItem}) => {
 
               <div className="flex items-center justify-between border-b-2 border-gray-200 py-3 text-xl font-medium">
                 <p>Total Bids Amount </p>
-                <p className="text-end">
+                <p className="text-end font-bold">
                   <span>$</span>
                   <span>{price.toLocaleString()}</span>
                 </p>

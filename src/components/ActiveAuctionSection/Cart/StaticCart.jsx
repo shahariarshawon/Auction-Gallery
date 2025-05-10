@@ -6,11 +6,11 @@ const StaticCart = () => {
       <div>
         <div className="card w-96 bg-white rounded-3xl card-lg shadow-sm">
           <div className="card-body">
-            <div className="flex items-center gap-2 justify-center pb-3">
+            <div className="flex items-center gap-2 justify-center pb-3 text-blue-500">
               <span>
                 <FaRegHeart className="text-2xl"></FaRegHeart>
               </span>
-              <h2 className=" text-center text-3xl font-medium">
+              <h2 className=" text-center text-3xl font-medium ">
                 Favourite Items
               </h2>
             </div>

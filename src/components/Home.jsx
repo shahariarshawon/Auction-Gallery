@@ -2,7 +2,7 @@ import Banner from "./banner/Banner";
 import Navbar from "./navbar/Navbar";
 import AuctionSection from "./ActiveAuctionSection/AuctionSection";
 import { useState } from "react";
-import { ToastContainer } from "react-toastify";
+import { toast, Bounce } from "react-toastify";
 import Footer from "./Footer/Footer";
 
 const Home = () => {
@@ -14,11 +14,21 @@ const Home = () => {
     }
   }
 
-  function removeCartItem(id)
-  {
-    console.log(id);
-    const remainItems=cartData.filter((product)=>product.id!==id);
-    setCartData(remainItems)
+  function removeCartItem(id) {
+    const remainItems = cartData.filter((product) => product.id !== id);
+    setCartData(remainItems);
+    toast.warn("Item Removed from Favourites!", {
+      className: "text-lg font-semibold",
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
   }
   return (
     <>
@@ -32,7 +42,7 @@ const Home = () => {
         products={cartData}
         removeCartItem={removeCartItem}
       ></AuctionSection>
-      <ToastContainer></ToastContainer>
+
       <Footer></Footer>
     </>
   );

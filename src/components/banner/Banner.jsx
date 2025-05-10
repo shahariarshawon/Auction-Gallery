@@ -1,8 +1,6 @@
 import BannerImage from "../../assets/images/bannerImage.png";
 
-
 const Banner = () => {
-   
   return (
     <>
       <div
@@ -29,9 +27,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div>
-
-      </div>
+      <div></div>
     </>
   );
 };

@@ -2,8 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
-import { ToastContainer, toast, Bounce } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast, Bounce } from "react-toastify";
 
 const Section = ({ item, handleAddToCart }) => {
   const [clickedIcon, setClickedIcon] = useState(false);
@@ -13,9 +12,10 @@ const Section = ({ item, handleAddToCart }) => {
     setClickedIcon(true);
 
     // console.log(clickedIcon);
-    toast.success("🛒 Added to Cart Successfully!", {
+    toast.success("Item Added to Favourites!", {
+      className: "text-lg font-semibold",
       position: "top-right",
-      autoClose: 5000,
+      autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: false,
       pauseOnHover: true,
@@ -28,7 +28,7 @@ const Section = ({ item, handleAddToCart }) => {
   return (
     <>
       {
-        <tr>
+        <tr className="border-t-2 border-black ">
           <td>
             <div className="flex items-center gap-5  ">
               <div>
@@ -39,30 +39,33 @@ const Section = ({ item, handleAddToCart }) => {
                 />
               </div>
               <div className="text-justify">
-                <div className="text-base font-semibold">{item.title}</div>
+                <div className="text-lg font-bold">{item.title}</div>
 
                 <div className="text-[15px]">{item.description}</div>
               </div>
             </div>
           </td>
-          <td className="text-xl ">{"$" + item.currentBidPrice}</td>
-          <td className="text-xl ">{item.timeLeft}</td>
+          <td className="text-xl font-bold">
+            {"$" + item.currentBidPrice.toLocaleString()}
+          </td>
+          <td className="text-xl font-bold">{item.timeLeft}</td>
           <td>
-            <div className="flex items-center justify-center p-2 ">
+            <div
+              className={`flex items-center justify-center p-2  ${
+                clickedIcon ? "cursor-not-allowed" : "cursor-auto"
+              }`}
+            >
               <button
                 onClick={handleData}
                 disabled={clickedIcon}
-                className={`btn btn-ghost btn-circle text-2xl ${
-                  clickedIcon ? "cursor-not-allowed" : "cursor-pointer"
-                } `}
+                className={`btn btn-ghost btn-circle text-2xl `}
               >
                 {clickedIcon ? (
-                  <FaHeart className="text-2xl text-red-300 "></FaHeart>
+                  <FaHeart className="text-2xl text-red-400   "></FaHeart>
                 ) : (
-                  <FaRegHeart className="text-2xl "></FaRegHeart>
+                  <FaRegHeart className="text-2xl"></FaRegHeart>
                 )}
               </button>
-              
             </div>{" "}
           </td>
         </tr>

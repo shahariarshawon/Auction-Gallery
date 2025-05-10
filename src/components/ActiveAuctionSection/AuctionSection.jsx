@@ -4,21 +4,23 @@ import Carts from "./Cart/Carts";
 import Sections from "./Section/Sections";
 
 const AuctionSection = ({ handleAddToCart, products, removeCartItem }) => {
- 
   return (
     <>
       <section className="px-[5%] pt-32  bg-[#ebf0f5]">
         <div className="mb-8">
-          <h2 className="text-3xl text-[#0E2954] py-3 font-medium">
-            Active Buttons
+          <h2 className="text-4xl text-[#0E2954] py-3 font-bold">
+            Active Auctions
           </h2>
-          <p className="text-xl">Discover and Bid on Extraordinary Items</p>
+          <p className="text-lg">Discover and Bid on Extraordinary Items</p>
         </div>
         <div className="flex gap-6 pb-10 ">
           {/* table */}
-          <Sections handleAddToCart={handleAddToCart}></Sections>
+          <Sections
+            handleAddToCart={handleAddToCart}
+            removeCartItem={removeCartItem}
+          ></Sections>
           {/* favourite items */}
-          <Carts products={products}  removeCartItem={removeCartItem} ></Carts>
+          <Carts products={products} removeCartItem={removeCartItem}></Carts>
         </div>
       </section>
     </>
