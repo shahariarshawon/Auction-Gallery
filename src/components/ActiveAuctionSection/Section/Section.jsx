@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Section = ({ item, handleAddToCart }) => {
   const [clickedIcon, setClickedIcon] = useState(false);
 
-  function handleData(item) {
+  function handleData() {
     handleAddToCart(item);
     setClickedIcon(true);
 
@@ -52,7 +52,9 @@ const Section = ({ item, handleAddToCart }) => {
               <button
                 onClick={handleData}
                 disabled={clickedIcon}
-                className={`btn btn-ghost btn-circle text-2xl ${clickedIcon?'cursor-not-allowed':'cursor-pointer'}`}
+                className={`btn btn-ghost btn-circle text-2xl ${
+                  clickedIcon ? "cursor-not-allowed" : "cursor-pointer"
+                } `}
               >
                 {clickedIcon ? (
                   <FaHeart className="text-2xl text-red-300 "></FaHeart>
@@ -60,6 +62,7 @@ const Section = ({ item, handleAddToCart }) => {
                   <FaRegHeart className="text-2xl "></FaRegHeart>
                 )}
               </button>
+              
             </div>{" "}
           </td>
         </tr>

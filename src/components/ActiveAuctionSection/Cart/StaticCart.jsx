@@ -26,7 +26,7 @@ const StaticCart = () => {
               <p>Total Bids Amount </p>
               <p className="text-end">
                 <span>$</span>
-                <span>0000</span>
+                <span>0</span>
               </p>
             </div>
           </div>

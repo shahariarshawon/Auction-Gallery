@@ -7,25 +7,31 @@ import Footer from "./Footer/Footer";
 
 const Home = () => {
   const [cartData, setCartData] = useState([]);
-    
+
   function handleAddToCart(data) {
-    if(!cartData.includes(data))
-    {
-        setCartData([...cartData,data])
+    if (!cartData.includes(data)) {
+      setCartData([...cartData, data]);
     }
   }
-  console.log(cartData.length);
 
-  // console.log(jsonData);
+  function removeCartItem(id)
+  {
+    console.log(id);
+    const remainItems=cartData.filter((product)=>product.id!==id);
+    setCartData(remainItems)
+  }
   return (
     <>
-      
       <div className="fixed top-0 right-0 left-0 z-50">
-      <Navbar data={cartData}></Navbar>
+        <Navbar data={cartData}></Navbar>
       </div>
-      
+
       <Banner></Banner>
-      <AuctionSection handleAddToCart={handleAddToCart} products={cartData} ></AuctionSection>
+      <AuctionSection
+        handleAddToCart={handleAddToCart}
+        products={cartData}
+        removeCartItem={removeCartItem}
+      ></AuctionSection>
       <ToastContainer></ToastContainer>
       <Footer></Footer>
     </>
